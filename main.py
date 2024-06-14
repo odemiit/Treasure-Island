@@ -44,7 +44,7 @@ if first_step == "left":
                     elif third_step == "blue":
                               print("You've been eaten by beasts. Game Over")
                     elif third_step == "yellow":
-                              print("Congratulations!! You win")
+                              print("Congratulations, you found the treasure!! You win")
                     else:
                               print("Game Over.")
           else:
