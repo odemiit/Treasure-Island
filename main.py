@@ -27,6 +27,7 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 first_step = input("Youre at a crossroad. Where do you want to go? Type left or right\n")
+first_step = first_step.lower()
 
 if first_step == "left":
           second_step = input("You've come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n")
