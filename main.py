@@ -31,10 +31,22 @@ first_step = first_step.lower()
 
 if first_step == "left":
           second_step = input("You've come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n")
-
+          second_step = second_step.lower()
+          
           #check next step
           if second_step == "wait":
                     third_step = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n")
+                    third_step = third_step.lower()
+                    
+                    #check next step for door
+                    if third_step == "red":
+                              print("You've been burned by fire. Game Over")
+                    elif third_step == "blue":
+                              print("You've been eaten by beasts. Game Over")
+                    elif third_step == "yellow":
+                              print("Congratulations!! You win")
+                    else:
+                              print("Game Over.")
           else:
                     print("You get attacked by an angry trout. Game Over.")
 else:
